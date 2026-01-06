@@ -15,7 +15,10 @@ This project analyzes user spending patterns using transaction data to identify 
 ## 3. Key Questions
 - How do users spend money by category?
 - Are there noticeable patterns by time or user type?
+- Which spending categories account for the highest total amount?
+- How does spending vary by time (month / day)?
 
+  
 ## 4. Tools
 - SQL (DataGrip)
 - Python (Pandas, Matplotlib)
