@@ -1,25 +1,24 @@
 SELECT COUNT(*)
-FROM bank_customer_churn;
+FROM customers;
 
 
 SELECT *
-FROM bank_customer_churn
+FROM customers
 LIMIT 10;
 
-SELECT ROUND(AVG(exited) * 100, 2) AS churn_rate
-FROM bank_customer_churn;
+
 
 SELECT
   country,
   ROUND(AVG(exited) * 100, 2) AS churn_rate
-FROM bank_customer_churn
+FROM customers
 GROUP BY country
 ORDER BY churn_rate DESC;
 
 SELECT
   gender,
   ROUND(AVG(exited) * 100, 2) AS churn_rate
-FROM bank_customer_churn
+FROM customers
 GROUP BY gender;
 
 SELECT
@@ -30,7 +29,7 @@ SELECT
     ELSE '50+'
   END AS age_group,
   ROUND(AVG(exited) * 100, 2) AS churn_rate
-FROM bank_customer_churn
+FROM customers
 GROUP BY age_group
 ORDER BY churn_rate DESC;
 
@@ -38,6 +37,6 @@ ORDER BY churn_rate DESC;
 SELECT
   CASE WHEN balance > 0 THEN 'Has Balance' ELSE 'No Balance' END AS balance_group,
   ROUND(AVG(exited) * 100, 2) AS churn_rate
-FROM bank_customer_churn
+FROM customers
 GROUP BY balance_group;
 

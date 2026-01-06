@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourcePerFileMappings">
+    <file url="file://$PROJECT_DIR$/sql/bank_customer_churn.sql" value="635ed551-4107-4528-8938-f38e4d67a77e" />
+    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/635ed551-4107-4528-8938-f38e4d67a77e/console.sql" value="635ed551-4107-4528-8938-f38e4d67a77e" />
+  </component>
+</project>
