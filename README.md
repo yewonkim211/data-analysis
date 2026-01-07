@@ -20,7 +20,7 @@ This project analyzes user spending patterns using transaction data to identify 
 
   
 ## 4. Tools
-- SQL (DataGrip)
+- SQL (DBeaver)
 - Python (Pandas, Matplotlib)
 - GitHub
 
