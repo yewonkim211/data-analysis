@@ -40,3 +40,11 @@ SELECT
 FROM customers
 GROUP BY balance_group;
 
+-- 이탈 여부별 평균 잔액과 신용점수 비교
+SELECT
+  churn,
+  COUNT(*) AS customers,
+  AVG(balance) AS avg_balance,
+  AVG(credit_score) AS avg_credit_score
+FROM customers
+GROUP BY churn;
